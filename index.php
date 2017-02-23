@@ -1,6 +1,8 @@
 <?php
 
 
+$file_name = "phptrace.log";
+
 // $file = fopen("test.log", "a+");
 //
 // $content = stream_get_contents($file);
@@ -68,7 +70,7 @@ function change_result($last_level, $curr_level, &$stack, $node, $result) {
 $node = $header = new node("header");
 $stack = [];
 
-$file = file("test.log");
+$file = file($file_name);
 
 $last_level = 0;
 
